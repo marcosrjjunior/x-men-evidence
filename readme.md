@@ -1,15 +1,22 @@
 ### X-men evidence
 
-##### Setup
+#### Setup
+First run the install commands to fetch the dependencies
 ```
 composer install
 npm install
-cp .env.example .env
-php artisan key:generate
-php artisan db:seed
 ```
 
-Admin User
+Database informations
+```
+cp .env.example .env
+```
+> Fill the DB informations on .env DB_*.
+
+php artisan key:generate
+php artisan migrate && php artisan db:seed
+
+Admin User /admin
 ```
 wolverine@xmen.com
 wolverine
