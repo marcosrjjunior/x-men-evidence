@@ -33,7 +33,7 @@
                                 </div>
                             </form>
                             @else
-                                <img class="img-fluid rounded" src="{{ asset('storage/'.$submission->picture) }}" />
+                                <img class="img-fluid rounded" src="{{ asset($submission->picture) }}" />
                             @endif
                         </div>
 
