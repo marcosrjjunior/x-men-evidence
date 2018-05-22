@@ -4,7 +4,7 @@
     <div class="col-md-12">
         <h3>X-men Evidence</h3>
         <a href="/">
-            <img src="{{ asset('storage/xmen-logo.png') }}" />
+            <img src="{{ asset('images/xmen-logo.png') }}" />
         </a>
     </div>
 </div>
