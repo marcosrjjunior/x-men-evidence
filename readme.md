@@ -1,20 +1,24 @@
 ### X-men evidence
 
 #### Setup
-First run the install commands to fetch the dependencies
+First, run the install commands to fetch the dependencies
 ```
 composer install
 npm install
 ```
 
-Database informations
+Database connection
 ```
 cp .env.example .env
 ```
 > Fill the DB informations on .env DB_*.
 
+Then, run the migration and following commands to start the project
+```
 php artisan key:generate
 php artisan migrate && php artisan db:seed
+composer dump
+```
 
 Admin User /admin
 ```
