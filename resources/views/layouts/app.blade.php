@@ -42,7 +42,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    <img class="profile-picture" src="{{ asset('pictures/'.Auth::user()->picture) }}" /> {{ Auth::user()->name }} <span class="caret"></span>
+                                    <img class="profile-picture" src="{{ asset(Auth::user()->picture) }}" /> {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
