@@ -24,7 +24,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $submissions = Submission::all();
+        $submissions = Submission::paginate(15);
 
         return view('admin.home', [
             'submissions' => $submissions
